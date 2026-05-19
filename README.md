@@ -46,4 +46,6 @@ Final URL:
 https://roba364.github.io/drago-adopt/
 ```
 
+![QR code for Drago adoption page](qr.png)
+
 The included `qr.png` points to the final GitHub Pages URL.
