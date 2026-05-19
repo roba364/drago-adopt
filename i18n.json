@@ -44,7 +44,7 @@
     "contact.title": "Приходите знакомиться",
     "contact.address": "Краља Александра 36, Белград",
     "contact.repost": "Будем благодарны репостам.",
-    "qr.note": "Заменить после включения GitHub Pages."
+    "qr.note": "Отсканируйте QR-код, чтобы открыть страницу Драго."
   },
   "en": {
     "nav.story": "Story",
@@ -91,7 +91,7 @@
     "contact.title": "Come meet Drago",
     "contact.address": "Kralja Aleksandra 36, Belgrade",
     "contact.repost": "Reposts are very appreciated.",
-    "qr.note": "Replace this after GitHub Pages is enabled."
+    "qr.note": "Scan this QR code to open Drago adoption page."
   },
   "sr": {
     "nav.story": "Priča",
@@ -138,6 +138,6 @@
     "contact.title": "Dođite da upoznate Draga",
     "contact.address": "Kralja Aleksandra 36, Beograd",
     "contact.repost": "Hvala za svako deljenje.",
-    "qr.note": "Zameniti nakon uključivanja GitHub Pages."
+    "qr.note": "Skenirajte QR kod da otvorite Drago stranicu."
   }
 }

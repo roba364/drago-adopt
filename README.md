@@ -38,16 +38,12 @@ After adding real images, update the image paths in `index.html` from `.svg` to 
 
 ## Deploy with GitHub Pages
 
-1. Create a GitHub repo named `drago-adopt`.
-2. Push this folder to the `main` branch.
-3. Open repository settings: `Settings -> Pages`.
-4. Set source to `Deploy from a branch`, branch `main`, folder `/root`.
-5. The final URL should be:
+Repository: https://github.com/roba364/drago-adopt
+
+Final URL:
 
 ```text
 https://roba364.github.io/drago-adopt/
 ```
 
-## QR
-
-After GitHub Pages is live, generate a QR code for the final URL and replace `qr-placeholder.svg`.
+The included `qr.png` points to the final GitHub Pages URL.
