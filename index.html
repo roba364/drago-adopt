@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drago is looking for a forever home in Belgrade.">
+  <meta property="og:title" content="Drago - looking for a forever home">
+  <meta property="og:description" content="Mini mixed-breed puppy in Belgrade, rescued and ready for adoption.">
+  <meta property="og:image" content="photos/hero.svg">
+  <title>Drago - Adoption</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-stone-950 antialiased">
+  <header class="fixed inset-x-0 top-0 z-40 border-b border-white/30 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#top" class="font-semibold tracking-tight">Drago</a>
+      <nav class="hidden items-center gap-6 text-sm text-stone-700 sm:flex">
+        <a href="#story" data-i18n="nav.story">Story</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="flex rounded-full border border-stone-200 bg-white p-1 text-sm shadow-sm" aria-label="Language selector">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="sr">SR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="pt-20">
+      <div class="mx-auto grid min-h-[calc(100svh-5rem)] max-w-6xl items-center gap-8 px-4 py-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <div class="order-2 lg:order-1">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700" data-i18n="hero.kicker">Adoption in Belgrade</p>
+          <h1 class="text-6xl font-black tracking-tight text-stone-950 sm:text-7xl">Drago</h1>
+          <h2 class="mt-3 max-w-xl text-3xl font-bold leading-tight text-stone-800 sm:text-5xl" data-i18n="hero.title">Looking for a forever home</h2>
+          <p class="mt-5 max-w-xl text-lg leading-8 text-stone-700" data-i18n="hero.lead">A calm, tiny puppy rescued in Belgrade is ready to meet his people.</p>
+
+          <div class="mt-6 flex flex-wrap gap-2 text-sm font-medium">
+            <span class="chip" data-i18n="chip.boy">male</span>
+            <span class="chip" data-i18n="chip.age">~5-6 months</span>
+            <span class="chip" data-i18n="chip.mini">mini size</span>
+            <span class="chip" data-i18n="chip.vaccinated">vaccinated</span>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a class="cta cta-primary" href="tel:+381615116443">Call</a>
+            <a class="cta" href="https://wa.me/381615116443" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="cta" href="https://t.me/pani_sona" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <img class="hero-photo" src="photos/hero.svg" alt="Drago portrait">
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <div class="mx-auto max-w-4xl px-4">
+        <p class="eyebrow" data-i18n="story.kicker">Rescue story</p>
+        <h2 class="section-title" data-i18n="story.title">A small dog with a big will to live</h2>
+        <p class="section-lead" data-i18n="story.short">Drago was rescued in Belgrade near a roundabout. He followed his rescuer for a long way, got to a veterinary clinic, and has been learning how safe home life can be.</p>
+        <details class="mt-6 rounded-3xl border border-stone-200 bg-white p-6 shadow-sm">
+          <summary class="cursor-pointer font-semibold text-emerald-800" data-i18n="story.more">Read the full story</summary>
+          <p class="mt-4 leading-8 text-stone-700" data-i18n="story.full">He was found alone on the street and made an enormous effort to stay close to the person who noticed him. After the vet check he moved into a temporary home, where he is now growing, resting, eating well, and slowly becoming a confident puppy.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="gallery" class="section bg-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="eyebrow" data-i18n="gallery.kicker">Gallery</p>
+        <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+          <h2 class="section-title" data-i18n="gallery.title">Meet Drago</h2>
+          <p class="max-w-md text-stone-600" data-i18n="gallery.note">Temporary placeholders are used until the real photos are added.</p>
+        </div>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <button class="gallery-item" data-full="photos/gallery-01.svg"><img src="photos/gallery-01.svg" alt="Drago at home"></button>
+          <button class="gallery-item" data-full="photos/gallery-02.svg"><img src="photos/gallery-02.svg" alt="Drago with another dog"></button>
+          <button class="gallery-item" data-full="photos/gallery-03.svg"><img src="photos/gallery-03.svg" alt="Drago outside"></button>
+          <button class="gallery-item" data-full="photos/gallery-04.svg"><img src="photos/gallery-04.svg" alt="Drago gives paw"></button>
+          <button class="gallery-item" data-full="photos/gallery-05.svg"><img src="photos/gallery-05.svg" alt="Drago portrait"></button>
+          <button class="gallery-item" data-full="photos/gallery-06.svg"><img src="photos/gallery-06.svg" alt="Drago resting"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="eyebrow" data-i18n="character.kicker">Character</p>
+        <h2 class="section-title" data-i18n="character.title">Soft, careful, and learning fast</h2>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="info-card"><span>✓</span><p data-i18n="character.calm">Calm</p></div>
+          <div class="info-card"><span>✓</span><p data-i18n="character.eats">Eats well</p></div>
+          <div class="info-card"><span>✓</span><p data-i18n="character.play">Plays gently</p></div>
+          <div class="info-card"><span>✓</span><p data-i18n="character.no-chew">Does not chew things</p></div>
+          <div class="info-card"><span>✓</span><p data-i18n="character.teeth">Teeth have changed</p></div>
+          <div class="info-card"><span>✓</span><p data-i18n="character.dog">Gets along with another dog</p></div>
+          <div class="info-card lg:col-span-2"><span>⌛</span><p data-i18n="character.toilet">Learning toilet by schedule</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-emerald-950 text-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="eyebrow text-emerald-200" data-i18n="health.kicker">Health</p>
+        <h2 class="section-title text-white" data-i18n="health.title">Vet checked and started vaccination</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="dark-card">
+            <h3 data-i18n="health.done.title">Already done</h3>
+            <ul>
+              <li data-i18n="health.done.tests">Rapid infection tests - negative</li>
+              <li data-i18n="health.done.simparica">Simparica Trio</li>
+              <li data-i18n="health.done.vaccine">First vaccine</li>
+            </ul>
+          </div>
+          <div class="dark-card">
+            <h3 data-i18n="health.future.title">For future adopters</h3>
+            <ul>
+              <li data-i18n="health.future.vaccine">Second vaccine + rabies</li>
+              <li data-i18n="health.future.chip">Microchip</li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-6 text-sm text-emerald-100" data-i18n="health.note">Vet Princess documents can be shown during a meeting.</p>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="mx-auto max-w-4xl px-4 text-center">
+        <p class="eyebrow" data-i18n="family.kicker">Who we are looking for</p>
+        <h2 class="section-title" data-i18n="family.title">A permanent family is the priority</h2>
+        <p class="section-lead mx-auto" data-i18n="family.text">Experienced temporary foster care with puppies would also help a lot while Drago waits for his people.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 lg:grid-cols-[1fr_0.72fr]">
+        <div>
+          <p class="eyebrow" data-i18n="contact.kicker">Contact</p>
+          <h2 class="section-title" data-i18n="contact.title">Come meet Drago</h2>
+          <div class="mt-8 grid gap-4">
+            <a class="contact-row" href="https://maps.google.com/?q=Kralja%20Aleksandra%2036%20Belgrade" target="_blank" rel="noopener"><span>📍</span><strong data-i18n="contact.address">Kralja Aleksandra 36, Belgrade</strong></a>
+            <a class="contact-row" href="tel:+381615116443"><span>📞</span><strong>+381 61 511 6443</strong></a>
+            <a class="contact-row" href="https://wa.me/381615116443" target="_blank" rel="noopener"><span>💬</span><strong>WhatsApp</strong></a>
+            <a class="contact-row" href="https://t.me/pani_sona" target="_blank" rel="noopener"><span>✈️</span><strong>@pani_sona</strong></a>
+          </div>
+          <p class="mt-6 text-stone-700" data-i18n="contact.repost">Reposts are very appreciated.</p>
+        </div>
+        <div class="rounded-[2rem] bg-stone-950 p-6 text-white shadow-xl">
+          <p class="text-sm uppercase tracking-[0.18em] text-emerald-200">QR</p>
+          <img class="mt-4 rounded-2xl bg-white p-4" src="qr-placeholder.svg" alt="QR placeholder">
+          <p class="mt-4 text-sm text-stone-300" data-i18n="qr.note">Replace this after GitHub Pages is enabled.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-stone-200 bg-white px-4 py-8 text-center text-sm text-stone-500">
+    <span>2026 · Drago</span>
+  </footer>
+
+  <div id="lightbox" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/90 p-4">
+    <button id="lightbox-close" class="absolute right-4 top-4 rounded-full bg-white px-4 py-2 font-semibold text-stone-950">Close</button>
+    <img id="lightbox-img" class="max-h-[88vh] max-w-full rounded-3xl object-contain" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

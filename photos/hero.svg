@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Drago photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d1fae5"/>
+      <stop offset="0.55" stop-color="#f5f5f4"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="600" cy="680" r="300" fill="#292524"/>
+  <circle cx="475" cy="610" r="38" fill="#fff7ed"/>
+  <circle cx="725" cy="610" r="38" fill="#fff7ed"/>
+  <circle cx="485" cy="615" r="16" fill="#111827"/>
+  <circle cx="715" cy="615" r="16" fill="#111827"/>
+  <path d="M565 735c28 24 55 24 82 0" fill="none" stroke="#fff7ed" stroke-width="24" stroke-linecap="round"/>
+  <path d="M380 430 230 230l90 330zM820 430l150-200-90 330z" fill="#44403c"/>
+  <rect x="220" y="1040" width="760" height="150" rx="75" fill="#047857"/>
+  <text x="600" y="1134" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff">Drago</text>
+  <text x="600" y="1270" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#44403c">Replace with real photo</text>
+</svg>
