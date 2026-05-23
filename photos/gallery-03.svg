@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675"><rect width="900" height="675" fill="#dbeafe"/><path d="M0 500h900v175H0z" fill="#065f46"/><circle cx="450" cy="340" r="140" fill="#292524"/><text x="450" y="590" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="#fff">Outside</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Drago portrait placeholder">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFF5EC"/>
+      <stop offset="1" stop-color="#FFB347"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#g3)"/>
+  <!-- frame circle -->
+  <circle cx="500" cy="500" r="380" fill="#FFFFFF" opacity="0.4"/>
+  <!-- portrait -->
+  <path d="M300 460 L240 240 L460 360 Z" fill="#2A1810"/>
+  <path d="M700 460 L760 240 L540 360 Z" fill="#2A1810"/>
+  <path d="M305 452 L270 290 L430 360 Z" fill="#FF5A36" opacity="0.5"/>
+  <path d="M695 452 L730 290 L570 360 Z" fill="#FF5A36" opacity="0.5"/>
+  <ellipse cx="500" cy="600" rx="240" ry="250" fill="#2A1810"/>
+  <ellipse cx="500" cy="700" rx="140" ry="120" fill="#3D2519"/>
+  <ellipse cx="410" cy="540" rx="30" ry="38" fill="#FFF5EC"/>
+  <ellipse cx="590" cy="540" rx="30" ry="38" fill="#FFF5EC"/>
+  <circle cx="413" cy="548" r="17" fill="#1A0E08"/>
+  <circle cx="593" cy="548" r="17" fill="#1A0E08"/>
+  <circle cx="419" cy="540" r="5" fill="#FFFFFF"/>
+  <circle cx="599" cy="540" r="5" fill="#FFFFFF"/>
+  <ellipse cx="500" cy="680" rx="28" ry="22" fill="#1A0E08"/>
+  <path d="M500 705 L500 735" stroke="#1A0E08" stroke-width="5" stroke-linecap="round"/>
+  <path d="M465 740 Q500 770 535 740" stroke="#1A0E08" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <text x="500" y="960" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="44" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">portrait</text>
+</svg>

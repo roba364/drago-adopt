@@ -1,20 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Drago photo placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Drago hero portrait placeholder">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#d1fae5"/>
-      <stop offset="0.55" stop-color="#f5f5f4"/>
-      <stop offset="1" stop-color="#fde68a"/>
+    <linearGradient id="heroBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFB89A"/>
+      <stop offset="0.55" stop-color="#FFD4B3"/>
+      <stop offset="1" stop-color="#FFF5EC"/>
     </linearGradient>
+    <radialGradient id="heroSpot" cx="0.5" cy="0.42" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="1200" height="1500" fill="url(#bg)"/>
-  <circle cx="600" cy="680" r="300" fill="#292524"/>
-  <circle cx="475" cy="610" r="38" fill="#fff7ed"/>
-  <circle cx="725" cy="610" r="38" fill="#fff7ed"/>
-  <circle cx="485" cy="615" r="16" fill="#111827"/>
-  <circle cx="715" cy="615" r="16" fill="#111827"/>
-  <path d="M565 735c28 24 55 24 82 0" fill="none" stroke="#fff7ed" stroke-width="24" stroke-linecap="round"/>
-  <path d="M380 430 230 230l90 330zM820 430l150-200-90 330z" fill="#44403c"/>
-  <rect x="220" y="1040" width="760" height="150" rx="75" fill="#047857"/>
-  <text x="600" y="1134" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff">Drago</text>
-  <text x="600" y="1270" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#44403c">Replace with real photo</text>
+  <rect width="1200" height="1500" fill="url(#heroBg)"/>
+  <rect width="1200" height="1500" fill="url(#heroSpot)"/>
+  <!-- ears -->
+  <path d="M340 470 L240 200 L520 380 Z" fill="#3A2519"/>
+  <path d="M860 470 L960 200 L680 380 Z" fill="#3A2519"/>
+  <path d="M345 462 L290 270 L490 380 Z" fill="#FF8A6B" opacity="0.45"/>
+  <path d="M855 462 L910 270 L710 380 Z" fill="#FF8A6B" opacity="0.45"/>
+  <!-- head -->
+  <ellipse cx="600" cy="720" rx="320" ry="340" fill="#2A1810"/>
+  <!-- snout -->
+  <ellipse cx="600" cy="850" rx="180" ry="160" fill="#3D2519"/>
+  <!-- eyes -->
+  <ellipse cx="475" cy="640" rx="40" ry="48" fill="#FFF5EC"/>
+  <ellipse cx="725" cy="640" rx="40" ry="48" fill="#FFF5EC"/>
+  <circle cx="478" cy="650" r="22" fill="#1A0E08"/>
+  <circle cx="728" cy="650" r="22" fill="#1A0E08"/>
+  <circle cx="486" cy="640" r="7" fill="#ffffff"/>
+  <circle cx="736" cy="640" r="7" fill="#ffffff"/>
+  <!-- nose -->
+  <ellipse cx="600" cy="820" rx="38" ry="28" fill="#1A0E08"/>
+  <!-- mouth -->
+  <path d="M600 855 L600 905" stroke="#1A0E08" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M555 910 Q600 940 645 910" stroke="#1A0E08" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- tongue -->
+  <path d="M580 920 Q600 955 620 920 Z" fill="#FF5A36"/>
+  <!-- body hint -->
+  <path d="M280 1100 Q600 1020 920 1100 L920 1500 L280 1500 Z" fill="#2A1810"/>
+  <!-- coral collar accent -->
+  <rect x="380" y="1040" width="440" height="46" rx="23" fill="#FF5A36"/>
+  <circle cx="600" cy="1063" r="22" fill="#FFD4B3"/>
+  <text x="600" y="1071" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#2A1810">D</text>
 </svg>

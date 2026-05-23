@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675"><rect width="900" height="675" fill="#ecfdf5"/><circle cx="360" cy="320" r="120" fill="#292524"/><circle cx="550" cy="300" r="145" fill="#d6d3d1"/><text x="450" y="535" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="#292524">With dog</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-label="Drago sleeping placeholder">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFE9D9"/>
+      <stop offset="1" stop-color="#FF8A6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#g2)"/>
+  <!-- pillow -->
+  <ellipse cx="480" cy="900" rx="380" ry="80" fill="#FF5A36" opacity="0.35"/>
+  <ellipse cx="480" cy="870" rx="360" ry="70" fill="#FFFFFF" opacity="0.5"/>
+  <!-- sleeping curl -->
+  <ellipse cx="480" cy="780" rx="280" ry="160" fill="#2A1810"/>
+  <!-- tail tip -->
+  <path d="M210 720 Q160 700 180 640" stroke="#2A1810" stroke-width="50" stroke-linecap="round" fill="none"/>
+  <!-- head curled -->
+  <ellipse cx="700" cy="720" rx="150" ry="140" fill="#2A1810"/>
+  <path d="M580 660 L530 540 L680 620 Z" fill="#2A1810"/>
+  <path d="M790 660 L840 540 L740 620 Z" fill="#2A1810"/>
+  <!-- closed eye -->
+  <path d="M640 720 Q665 700 690 720" stroke="#FFF5EC" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <!-- snout -->
+  <ellipse cx="730" cy="765" rx="60" ry="45" fill="#3D2519"/>
+  <ellipse cx="745" cy="760" rx="14" ry="10" fill="#1A0E08"/>
+  <!-- zzz -->
+  <text x="280" y="380" font-family="'Fraunces', Georgia, serif" font-size="80" font-weight="700" fill="#FFFFFF" opacity="0.7">z</text>
+  <text x="220" y="460" font-family="'Fraunces', Georgia, serif" font-size="100" font-weight="700" fill="#FFFFFF" opacity="0.55">z</text>
+  <text x="140" y="560" font-family="'Fraunces', Georgia, serif" font-size="120" font-weight="700" fill="#FFFFFF" opacity="0.4">z</text>
+  <text x="480" y="1130" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="40" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">resting</text>
+</svg>

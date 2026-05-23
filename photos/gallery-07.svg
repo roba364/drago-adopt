@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-label="Drago with friend placeholder">
+  <defs>
+    <linearGradient id="g7" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFF5EC"/>
+      <stop offset="1" stop-color="#FF8A6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#g7)"/>
+  <!-- Drago -->
+  <g>
+    <ellipse cx="340" cy="700" rx="190" ry="200" fill="#2A1810"/>
+    <path d="M210 530 L170 320 L320 460 Z" fill="#2A1810"/>
+    <path d="M470 530 L510 320 L360 460 Z" fill="#2A1810"/>
+    <ellipse cx="290" cy="650" rx="22" ry="28" fill="#FFF5EC"/>
+    <ellipse cx="390" cy="650" rx="22" ry="28" fill="#FFF5EC"/>
+    <circle cx="293" cy="656" r="13" fill="#1A0E08"/>
+    <circle cx="393" cy="656" r="13" fill="#1A0E08"/>
+    <ellipse cx="340" cy="730" rx="80" ry="70" fill="#3D2519"/>
+    <ellipse cx="340" cy="720" rx="20" ry="14" fill="#1A0E08"/>
+    <path d="M310 760 Q340 785 370 760" stroke="#1A0E08" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <rect x="280" y="800" width="120" height="22" rx="11" fill="#FF5A36"/>
+  </g>
+  <!-- friend (lighter dog) -->
+  <g>
+    <ellipse cx="660" cy="740" rx="170" ry="180" fill="#D6A684"/>
+    <path d="M540 580 L500 380 L640 510 Z" fill="#D6A684"/>
+    <path d="M780 580 L820 380 L680 510 Z" fill="#D6A684"/>
+    <ellipse cx="615" cy="690" rx="20" ry="26" fill="#FFF5EC"/>
+    <ellipse cx="705" cy="690" rx="20" ry="26" fill="#FFF5EC"/>
+    <circle cx="618" cy="696" r="12" fill="#1A0E08"/>
+    <circle cx="708" cy="696" r="12" fill="#1A0E08"/>
+    <ellipse cx="660" cy="770" rx="68" ry="60" fill="#B88762"/>
+    <ellipse cx="660" cy="760" rx="18" ry="13" fill="#1A0E08"/>
+    <path d="M635 795 Q660 815 685 795" stroke="#1A0E08" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- heart between -->
+  <path d="M500 470 Q480 450 460 470 Q440 500 500 540 Q560 500 540 470 Q520 450 500 470 Z" fill="#FF5A36"/>
+  <text x="480" y="1140" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="40" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">with friend</text>
+</svg>

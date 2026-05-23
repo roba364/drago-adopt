@@ -2,6 +2,8 @@
 
 Static one-page website for Drago's adoption campaign.
 
+Design: Pinterest-style masonry with a Sunset Coral palette (cream, coral, peach). Display type — Fraunces; body — Plus Jakarta Sans.
+
 ## Local preview
 
 ```bash
@@ -27,14 +29,9 @@ The current files in `photos/` are placeholders because the planned real files w
 Recommended final names:
 
 - `hero.jpeg`
-- `gallery-01.jpeg`
-- `gallery-02.jpeg`
-- `gallery-03.jpeg`
-- `gallery-04.jpeg`
-- `gallery-05.jpeg`
-- `gallery-06.jpeg`
+- `gallery-01.jpeg` … `gallery-08.jpeg`
 
-After adding real images, update the image paths in `index.html` from `.svg` to `.jpeg`.
+The masonry expects varied aspect ratios (3:4, 4:5, 1:1, 4:3, 9:16). After adding real images, update the image paths in `index.html` from `.svg` to `.jpeg`.
 
 ## Deploy with GitHub Pages
 

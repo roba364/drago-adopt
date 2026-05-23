@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675"><rect width="900" height="675" fill="#fff7ed"/><circle cx="420" cy="305" r="135" fill="#292524"/><path d="M520 370h180" stroke="#047857" stroke-width="48" stroke-linecap="round"/><text x="450" y="540" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="#292524">Gives paw</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Drago outside placeholder">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFD4B3"/>
+      <stop offset="0.6" stop-color="#FFE9D9"/>
+      <stop offset="1" stop-color="#FFF5EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g4)"/>
+  <!-- sun -->
+  <circle cx="980" cy="200" r="90" fill="#FFB347"/>
+  <circle cx="980" cy="200" r="130" fill="#FFB347" opacity="0.3"/>
+  <!-- ground -->
+  <path d="M0 700 Q600 640 1200 700 L1200 900 L0 900 Z" fill="#3DAA6E"/>
+  <path d="M0 760 Q600 730 1200 760 L1200 900 L0 900 Z" fill="#2A1810" opacity="0.25"/>
+  <!-- grass tufts -->
+  <path d="M120 730 L100 690 L140 700 L130 670 L160 700 L180 690 Z" fill="#2A1810" opacity="0.4"/>
+  <path d="M1020 740 L1000 700 L1040 710 L1030 680 L1060 710 L1080 700 Z" fill="#2A1810" opacity="0.4"/>
+  <!-- dog walking -->
+  <!-- body -->
+  <ellipse cx="600" cy="600" rx="220" ry="120" fill="#2A1810"/>
+  <!-- head -->
+  <circle cx="430" cy="540" r="140" fill="#2A1810"/>
+  <path d="M340 460 L300 320 L450 430 Z" fill="#2A1810"/>
+  <path d="M520 460 L560 320 L410 430 Z" fill="#2A1810"/>
+  <ellipse cx="395" cy="520" rx="20" ry="24" fill="#FFF5EC"/>
+  <ellipse cx="475" cy="520" rx="20" ry="24" fill="#FFF5EC"/>
+  <circle cx="397" cy="526" r="12" fill="#1A0E08"/>
+  <circle cx="477" cy="526" r="12" fill="#1A0E08"/>
+  <ellipse cx="440" cy="600" rx="22" ry="16" fill="#1A0E08"/>
+  <ellipse cx="430" cy="580" rx="60" ry="44" fill="#3D2519"/>
+  <ellipse cx="440" cy="600" rx="22" ry="16" fill="#1A0E08"/>
+  <path d="M415 625 Q440 645 465 625" stroke="#1A0E08" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <!-- legs -->
+  <rect x="510" y="690" width="40" height="80" rx="20" fill="#2A1810"/>
+  <rect x="600" y="690" width="40" height="80" rx="20" fill="#2A1810"/>
+  <rect x="690" y="690" width="40" height="80" rx="20" fill="#2A1810"/>
+  <rect x="780" y="690" width="40" height="80" rx="20" fill="#2A1810"/>
+  <!-- tail wagging -->
+  <path d="M820 580 Q900 540 880 480" stroke="#2A1810" stroke-width="40" stroke-linecap="round" fill="none"/>
+  <!-- collar -->
+  <rect x="380" y="650" width="100" height="22" rx="11" fill="#FF5A36"/>
+  <text x="600" y="850" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="40" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">outside</text>
+</svg>

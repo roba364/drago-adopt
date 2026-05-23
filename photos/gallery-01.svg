@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675"><rect width="900" height="675" fill="#f5f5f4"/><circle cx="450" cy="300" r="150" fill="#047857"/><text x="450" y="520" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="#292524">Home photo</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Drago playing placeholder">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FF8A6B"/>
+      <stop offset="1" stop-color="#FFD4B3"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g1)"/>
+  <circle cx="200" cy="220" r="60" fill="#FFFFFF" opacity="0.35"/>
+  <circle cx="760" cy="380" r="42" fill="#FFFFFF" opacity="0.25"/>
+  <circle cx="120" cy="900" r="80" fill="#FFFFFF" opacity="0.2"/>
+  <path d="M260 480 L200 280 L380 410 Z" fill="#2A1810"/>
+  <path d="M640 480 L700 280 L520 410 Z" fill="#2A1810"/>
+  <ellipse cx="450" cy="640" rx="240" ry="250" fill="#2A1810"/>
+  <ellipse cx="450" cy="730" rx="135" ry="120" fill="#3D2519"/>
+  <ellipse cx="360" cy="580" rx="30" ry="36" fill="#FFF5EC"/>
+  <ellipse cx="540" cy="580" rx="30" ry="36" fill="#FFF5EC"/>
+  <circle cx="363" cy="588" r="16" fill="#1A0E08"/>
+  <circle cx="543" cy="588" r="16" fill="#1A0E08"/>
+  <ellipse cx="450" cy="710" rx="28" ry="22" fill="#1A0E08"/>
+  <path d="M410 760 Q450 800 490 760" stroke="#1A0E08" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M432 770 Q450 810 468 770 Z" fill="#FF5A36"/>
+  <circle cx="700" cy="940" r="80" fill="#FF5A36"/>
+  <circle cx="685" cy="920" r="14" fill="#FFB89A"/>
+  <text x="450" y="1140" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="40" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">playing</text>
+</svg>

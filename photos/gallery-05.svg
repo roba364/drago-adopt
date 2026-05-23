@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675"><rect width="900" height="675" fill="#fef3c7"/><circle cx="450" cy="295" r="150" fill="#292524"/><text x="450" y="535" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="#292524">Portrait</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1600" role="img" aria-label="Drago running tall placeholder">
+  <defs>
+    <linearGradient id="g5" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FF5A36"/>
+      <stop offset="0.5" stop-color="#FFB347"/>
+      <stop offset="1" stop-color="#FFD4B3"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1600" fill="url(#g5)"/>
+  <!-- motion lines -->
+  <path d="M100 400 L260 400" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+  <path d="M120 480 L320 480" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+  <path d="M60 560 L220 560" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+  <!-- big head -->
+  <ellipse cx="450" cy="700" rx="290" ry="310" fill="#2A1810"/>
+  <path d="M260 470 L210 250 L420 380 Z" fill="#2A1810"/>
+  <path d="M640 470 L690 250 L480 380 Z" fill="#2A1810"/>
+  <path d="M265 462 L240 290 L400 380 Z" fill="#FF8A6B" opacity="0.55"/>
+  <path d="M635 462 L660 290 L500 380 Z" fill="#FF8A6B" opacity="0.55"/>
+  <!-- eyes -->
+  <ellipse cx="340" cy="640" rx="34" ry="40" fill="#FFF5EC"/>
+  <ellipse cx="560" cy="640" rx="34" ry="40" fill="#FFF5EC"/>
+  <circle cx="343" cy="648" r="19" fill="#1A0E08"/>
+  <circle cx="563" cy="648" r="19" fill="#1A0E08"/>
+  <circle cx="350" cy="640" r="6" fill="#FFFFFF"/>
+  <circle cx="570" cy="640" r="6" fill="#FFFFFF"/>
+  <!-- snout -->
+  <ellipse cx="450" cy="800" rx="155" ry="135" fill="#3D2519"/>
+  <ellipse cx="450" cy="780" rx="32" ry="24" fill="#1A0E08"/>
+  <path d="M450 810 L450 850" stroke="#1A0E08" stroke-width="6" stroke-linecap="round"/>
+  <!-- happy tongue out -->
+  <path d="M395 855 Q450 920 505 855 Q470 940 430 940 Q400 940 395 855 Z" fill="#FF5A36"/>
+  <!-- body running -->
+  <ellipse cx="450" cy="1200" rx="280" ry="180" fill="#2A1810"/>
+  <!-- legs in motion -->
+  <path d="M280 1320 L240 1450 L300 1450 L320 1340 Z" fill="#2A1810"/>
+  <path d="M380 1320 L380 1480 L430 1480 L420 1340 Z" fill="#2A1810"/>
+  <path d="M520 1340 L540 1480 L590 1470 L560 1330 Z" fill="#2A1810"/>
+  <path d="M620 1330 L680 1450 L720 1430 L660 1320 Z" fill="#2A1810"/>
+  <!-- collar -->
+  <rect x="360" y="1020" width="180" height="32" rx="16" fill="#FF5A36"/>
+  <text x="450" y="1550" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="42" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">running</text>
+</svg>

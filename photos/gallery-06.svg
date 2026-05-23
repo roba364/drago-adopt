@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675"><rect width="900" height="675" fill="#fafaf9"/><ellipse cx="450" cy="360" rx="230" ry="110" fill="#292524"/><circle cx="660" cy="455" r="42" fill="#047857"/><text x="450" y="555" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="#292524">Resting</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-label="Drago paw placeholder">
+  <defs>
+    <linearGradient id="g6" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#FFE9D9"/>
+      <stop offset="1" stop-color="#FFF5EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#g6)"/>
+  <!-- big paw print -->
+  <ellipse cx="480" cy="700" rx="200" ry="160" fill="#FF5A36"/>
+  <ellipse cx="300" cy="450" rx="80" ry="100" fill="#FF5A36"/>
+  <ellipse cx="450" cy="370" rx="75" ry="100" fill="#FF5A36"/>
+  <ellipse cx="600" cy="370" rx="75" ry="100" fill="#FF5A36"/>
+  <ellipse cx="750" cy="450" rx="80" ry="100" fill="#FF5A36"/>
+  <!-- inner highlight -->
+  <ellipse cx="465" cy="685" rx="40" ry="34" fill="#FFB89A"/>
+  <!-- corner dog peeking -->
+  <g transform="translate(120 950)">
+    <circle cx="0" cy="0" r="90" fill="#2A1810"/>
+    <path d="M-70 -50 L-90 -130 L-30 -90 Z" fill="#2A1810"/>
+    <path d="M70 -50 L90 -130 L30 -90 Z" fill="#2A1810"/>
+    <circle cx="-25" cy="-10" r="9" fill="#FFF5EC"/>
+    <circle cx="25" cy="-10" r="9" fill="#FFF5EC"/>
+    <circle cx="0" cy="30" r="9" fill="#1A0E08"/>
+  </g>
+  <text x="480" y="1130" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="40" font-weight="700" font-style="italic" fill="#2A1810" opacity="0.55">paws</text>
+</svg>
