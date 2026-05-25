@@ -223,19 +223,12 @@ body {
   transform: scale(1.03);
 }
 
-/* Vary aspect ratios for masonry rhythm — photos are 3:4 source */
+/* Real photos keep their natural aspect ratio for a true masonry rhythm */
 .masonry .pin-photo img {
-  object-fit: cover;
-  object-position: center 30%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.masonry > .pin-photo:nth-child(8n+1) img { aspect-ratio: 3 / 4; }
-.masonry > .pin-photo:nth-child(8n+2) img { aspect-ratio: 1 / 1; }
-.masonry > .pin-photo:nth-child(8n+3) img { aspect-ratio: 3 / 5; }
-.masonry > .pin-photo:nth-child(8n+4) img { aspect-ratio: 4 / 3; }
-.masonry > .pin-photo:nth-child(8n+5) img { aspect-ratio: 3 / 4; }
-.masonry > .pin-photo:nth-child(8n+6) img { aspect-ratio: 9 / 16; }
-.masonry > .pin-photo:nth-child(8n+7) img { aspect-ratio: 1 / 1; }
-.masonry > .pin-photo:nth-child(8n+8) img { aspect-ratio: 4 / 5; }
 
 .pin-caption {
   position: absolute;
@@ -737,13 +730,19 @@ body {
 
 .family-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
-  padding: 1.2rem 1.3rem;
+  padding: 1.3rem 1.4rem;
   background: var(--bg-card);
   border-radius: 20px;
   box-shadow: var(--shadow-md);
   text-align: left;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.family-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
 }
 
 .family-icon {
@@ -756,6 +755,21 @@ body {
   background: var(--coral);
   color: #fff;
   font-size: 1.5rem;
+}
+
+.family-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.family-desc {
+  margin-top: 0.45rem;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
 }
 
 .family-text {
@@ -849,6 +863,10 @@ body {
   border-radius: 16px;
   background: var(--bg-soft);
   padding: 10px;
+}
+
+.qr-card-wa img {
+  background: #fff;
 }
 
 .qr-text-title {

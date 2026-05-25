@@ -3,7 +3,7 @@ const state = {
   lang: localStorage.getItem("drago-lang") || pickLanguage(),
 };
 
-const ASSET_VERSION = "20260525-2100";
+const ASSET_VERSION = "20260525-2330";
 
 function pickLanguage() {
   const code = (navigator.language || "en").slice(0, 2).toLowerCase();
