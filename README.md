@@ -48,17 +48,11 @@ https://roba364.github.io/drago-adopt/
 
 The included `qr.png` points to the final GitHub Pages URL.
 
-## QR sticker variants
+## QR sticker
 
-Three printable sticker designs that combine Drago's hero photo, the QR, and Pinterest-style bubbles in the site palette. Open in a browser to compare:
+Printable sticker that combines Drago's hero photo, the QR, and the site palette. Open in a browser, click **Download PNG** (3× resolution) or use Print to save as PDF.
 
 - Local: `http://localhost:8000/stickers.html`
 - Live: https://roba364.github.io/drago-adopt/stickers.html
 
-Variants:
-
-1. **Pinterest Pin** — vertical card with the photo on top, badge overlay, name in Fraunces italic, QR + tag bubbles below. Closest to the site's hero block.
-2. **Boarding Pass** — adoption ticket with photo, name, FROM/TO grid, dashed perforation, and a QR stub captioned "board now". Plays on the QR-as-boarding-pass metaphor.
-3. **Coral Hero** — bold coral background, photo in a white frame, big "meet drago." headline, white QR row with CTA. Made for street poles and posters.
-
-The page is print-friendly — `Cmd+P` keeps each sticker on its own cut line.
+Design: coral background, photo in a white frame, big "meet Drago." headline in Fraunces, white QR row with CTA, and bubble tags. Made for street poles, posters, and social shares.

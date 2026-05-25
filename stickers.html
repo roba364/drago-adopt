@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Drago — QR sticker variants</title>
+  <title>Drago — QR sticker</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,6 @@
       --ink: #2A1810;
       --ink-soft: #7A5A48;
       --coral: #FF5A36;
-      --coral-hot: #E84320;
-      --warm: #FFB347;
       --divider: #F0DCC8;
       --shadow-md: 0 4px 14px rgba(42, 24, 16, 0.08), 0 1px 3px rgba(42, 24, 16, 0.05);
       --shadow-lg: 0 14px 40px rgba(42, 24, 16, 0.12), 0 4px 10px rgba(42, 24, 16, 0.06);
@@ -34,17 +32,20 @@
       background: var(--bg-base);
       color: var(--ink);
       -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
     }
 
     .page-head {
-      max-width: 60rem;
-      margin: 0 auto 2.5rem;
+      max-width: 32rem;
       text-align: center;
     }
     .page-head h1 {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 800;
-      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-size: clamp(2rem, 4vw, 2.6rem);
       line-height: 1;
       letter-spacing: -0.02em;
       margin: 0 0 0.5rem;
@@ -59,34 +60,6 @@
       font-size: 1rem;
     }
 
-    .grid {
-      display: grid;
-      gap: 3rem;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      max-width: 90rem;
-      margin: 0 auto;
-      align-items: start;
-      justify-items: center;
-    }
-
-    .stage {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-    .stage-label {
-      font-size: 0.78rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      font-weight: 800;
-    }
-    .stage-label .num {
-      color: var(--coral);
-    }
-
-    /* ───────────── Common bubble & QR primitives ───────────── */
     .bubble {
       display: inline-flex;
       align-items: center;
@@ -96,24 +69,13 @@
       font-weight: 800;
       font-size: 0.78rem;
       line-height: 1;
-      box-shadow: var(--shadow-md);
       white-space: nowrap;
-    }
-    .bubble-white { background: var(--bg-card); color: var(--ink); border: 1px solid var(--divider); }
-    .bubble-coral { background: var(--coral); color: #fff; }
-    .bubble-ink   { background: var(--ink);   color: var(--bg-base); }
-    .bubble-peach { background: var(--bg-soft); color: var(--ink); }
-    .bubble .dot {
-      width: 0.5rem; height: 0.5rem; border-radius: 50%;
-      background: var(--coral);
-      box-shadow: 0 0 0 3px rgba(255, 90, 54, 0.2);
     }
 
     .qr {
       background: #fff;
       border-radius: 14px;
       padding: 0.55rem;
-      box-shadow: var(--shadow-md);
       display: block;
     }
     .qr img {
@@ -124,262 +86,9 @@
     }
 
     /* ─────────────────────────────────────────────
-       VARIANT 1 — Pinterest Pin (vertical card)
+       Coral Hero sticker
        ───────────────────────────────────────────── */
-    .v1 {
-      width: 320px;
-      background: var(--bg-card);
-      border-radius: 28px;
-      padding: 14px;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-    }
-    .v1-photo {
-      position: relative;
-      border-radius: 18px;
-      overflow: hidden;
-      aspect-ratio: 3 / 4;
-      background: var(--bg-soft);
-    }
-    .v1-photo img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-    }
-    .v1-badge {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      padding: 0.4rem 0.85rem 0.4rem 0.55rem;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      border-radius: 999px;
-      font-size: 0.72rem;
-      font-weight: 800;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .v1-heart {
-      position: absolute;
-      right: 14px;
-      bottom: 14px;
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      background: var(--coral);
-      display: grid; place-items: center;
-      box-shadow: var(--shadow-coral);
-    }
-    .v1-heart svg { width: 18px; height: 18px; fill: #fff; }
-
-    .v1-body {
-      padding: 16px 8px 4px;
-    }
-    .v1-title {
-      font-family: "Fraunces", Georgia, serif;
-      font-weight: 800;
-      font-size: 2rem;
-      line-height: 0.95;
-      letter-spacing: -0.03em;
-      margin: 0 0 0.5rem;
-    }
-    .v1-title em { color: var(--coral); font-style: italic; }
-    .v1-sub {
-      font-size: 0.85rem;
-      color: var(--ink-soft);
-      margin: 0 0 12px;
-      line-height: 1.4;
-    }
-    .v1-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .v1-qr {
-      flex: 0 0 auto;
-      width: 84px; height: 84px;
-    }
-    .v1-cta {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .v1-cta .scan {
-      font-family: "Fraunces", Georgia, serif;
-      font-style: italic;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--ink);
-      line-height: 1;
-    }
-    .v1-cta .url {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: var(--coral);
-      letter-spacing: 0.02em;
-      word-break: break-all;
-    }
-    .v1-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 12px;
-    }
-    .v1-tags .bubble { font-size: 0.7rem; padding: 0.35rem 0.7rem; }
-
-    /* ─────────────────────────────────────────────
-       VARIANT 2 — Boarding Pass (adoption ticket)
-       ───────────────────────────────────────────── */
-    .v2 {
-      width: 320px;
-      background: var(--bg-card);
-      border-radius: 22px;
-      box-shadow: var(--shadow-lg);
-      overflow: hidden;
-      position: relative;
-    }
-    .v2-top {
-      padding: 18px 20px 14px;
-      background: var(--bg-card);
-    }
-    .v2-kicker {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--coral);
-      margin-bottom: 14px;
-    }
-    .v2-kicker .num {
-      color: var(--ink-soft);
-      letter-spacing: 0.12em;
-    }
-    .v2-photo {
-      width: 100%;
-      aspect-ratio: 5 / 4;
-      border-radius: 14px;
-      object-fit: cover;
-      display: block;
-    }
-    .v2-name {
-      font-family: "Fraunces", Georgia, serif;
-      font-weight: 800;
-      font-size: 2.4rem;
-      line-height: 0.95;
-      letter-spacing: -0.03em;
-      margin: 14px 0 2px;
-    }
-    .v2-name em { color: var(--coral); font-style: italic; }
-    .v2-tagline {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--ink-soft);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin: 0;
-    }
-    .v2-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 16px;
-    }
-    .v2-grid .cell small {
-      display: block;
-      font-size: 0.6rem;
-      font-weight: 800;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      margin-bottom: 4px;
-    }
-    .v2-grid .cell strong {
-      font-family: "Fraunces", Georgia, serif;
-      font-weight: 800;
-      font-size: 1.05rem;
-      line-height: 1.1;
-      color: var(--ink);
-    }
-    .v2-perf {
-      position: relative;
-      height: 24px;
-      background: var(--bg-soft);
-    }
-    .v2-perf::before,
-    .v2-perf::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 24px; height: 24px;
-      border-radius: 50%;
-      background: var(--bg-base);
-      transform: translateY(-50%);
-    }
-    .v2-perf::before { left: -12px; }
-    .v2-perf::after  { right: -12px; }
-    .v2-perf .dashes {
-      position: absolute;
-      left: 24px; right: 24px;
-      top: 50%;
-      border-top: 2px dashed var(--divider);
-      transform: translateY(-1px);
-    }
-    .v2-stub {
-      padding: 16px 20px 20px;
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      background: var(--bg-card);
-    }
-    .v2-stub .qr {
-      width: 84px; height: 84px;
-      padding: 4px;
-      box-shadow: none;
-      border: 1px solid var(--divider);
-      flex: 0 0 auto;
-    }
-    .v2-stub .copy {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .v2-stub .copy .board {
-      font-family: "Fraunces", Georgia, serif;
-      font-weight: 800;
-      font-style: italic;
-      font-size: 1.2rem;
-      color: var(--ink);
-      line-height: 1;
-    }
-    .v2-stub .copy .board em { color: var(--coral); }
-    .v2-stub .copy small {
-      font-size: 0.62rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-    }
-    .v2-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 2px;
-    }
-    .v2-tags .bubble {
-      font-size: 0.65rem;
-      padding: 0.3rem 0.6rem;
-      box-shadow: none;
-    }
-
-    /* ─────────────────────────────────────────────
-       VARIANT 3 — Coral Hero (bold street poster)
-       ───────────────────────────────────────────── */
-    .v3 {
+    .sticker {
       width: 320px;
       background: var(--coral);
       border-radius: 28px;
@@ -389,7 +98,7 @@
       position: relative;
       overflow: hidden;
     }
-    .v3::before {
+    .sticker::before {
       content: "";
       position: absolute;
       inset: auto -20% -30% auto;
@@ -397,25 +106,25 @@
       background: radial-gradient(circle at center, rgba(255, 246, 234, 0.25), transparent 70%);
       pointer-events: none;
     }
-    .v3-head {
+    .head {
       display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 14px;
     }
-    .v3-kicker {
+    .kicker {
       font-size: 0.7rem;
       font-weight: 800;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       opacity: 0.85;
     }
-    .v3-badge {
+    .badge {
       background: rgba(255, 255, 255, 0.18);
       padding: 0.3rem 0.7rem;
       border-radius: 999px;
       font-size: 0.7rem;
       font-weight: 800;
     }
-    .v3-photo {
+    .photo {
       width: 100%;
       aspect-ratio: 1;
       border-radius: 22px;
@@ -424,7 +133,7 @@
       border: 4px solid #fff;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
-    .v3-title {
+    .title {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 800;
       font-size: 3rem;
@@ -432,17 +141,17 @@
       letter-spacing: -0.04em;
       margin: 18px 0 4px;
     }
-    .v3-title em {
+    .title em {
       font-style: italic;
       color: var(--ink);
     }
-    .v3-sub {
+    .sub {
       font-size: 0.82rem;
       opacity: 0.92;
       margin: 0 0 16px;
       line-height: 1.45;
     }
-    .v3-row {
+    .row {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -451,45 +160,80 @@
       border-radius: 18px;
       padding: 10px;
     }
-    .v3-row .qr { width: 72px; height: 72px; padding: 0; box-shadow: none; }
-    .v3-row .copy {
+    .row .qr { width: 72px; height: 72px; padding: 0; box-shadow: none; }
+    .row .copy {
       flex: 1;
       display: flex; flex-direction: column;
       gap: 2px;
     }
-    .v3-row .copy strong {
+    .row .copy strong {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 800;
       font-style: italic;
       font-size: 1.1rem;
       line-height: 1;
     }
-    .v3-row .copy small {
+    .row .copy small {
       font-size: 0.66rem;
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--coral);
     }
-    .v3-tags {
+    .tags {
       display: flex; gap: 6px; flex-wrap: wrap;
       margin-top: 12px;
     }
-    .v3-tags .bubble {
+    .tags .bubble {
       background: rgba(255, 255, 255, 0.18);
       color: #fff;
-      box-shadow: none;
       font-size: 0.7rem;
       padding: 0.3rem 0.65rem;
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
-    /* ───────── print helpers ───────── */
+    .actions {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      font: 700 0.88rem/1 "Plus Jakarta Sans", system-ui, sans-serif;
+      padding: 0.85rem 1.4rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-coral {
+      background: var(--coral);
+      color: #fff;
+      box-shadow: var(--shadow-coral);
+    }
+    .btn-coral:hover { background: #E84320; }
+    .btn-coral:disabled { opacity: 0.6; cursor: progress; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border: 1.5px solid var(--ink);
+    }
+    .btn-ghost:hover { background: var(--ink); color: var(--bg-base); }
+    .actions-hint {
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+
     @media print {
       body { background: #fff; padding: 0; }
-      .page-head, .stage-label { display: none; }
-      .grid { gap: 1rem; }
-      .v1, .v2, .v3 {
+      .page-head, .actions, .actions-hint { display: none; }
+      .sticker {
         page-break-inside: avoid;
         box-shadow: none;
         border: 1px dashed #ccc;
@@ -500,107 +244,73 @@
 <body>
 
   <header class="page-head">
-    <h1>Drago — QR <em>sticker</em> variants</h1>
-    <p>Three takes on the same idea. Open this page, pick a favourite, print or screenshot.</p>
+    <h1>Drago — QR <em>sticker</em></h1>
+    <p>Print, screenshot, or share. Each scan brings Drago a step closer to home.</p>
   </header>
 
-  <main class="grid">
-
-    <!-- ─────────────── VARIANT 1 — Pinterest Pin ─────────────── -->
-    <div class="stage">
-      <span class="stage-label"><span class="num">01</span> &nbsp;Pinterest Pin</span>
-      <div class="v1">
-        <div class="v1-photo">
-          <img src="photos/hero.jpg" alt="Drago portrait">
-          <div class="v1-badge"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--coral);"></span>still looking for home</div>
-          <div class="v1-heart">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg>
-          </div>
-        </div>
-        <div class="v1-body">
-          <h2 class="v1-title">meet <em>Drago.</em></h2>
-          <p class="v1-sub">A quiet mini-boy rescued in Belgrade. Ready to meet his family.</p>
-          <div class="v1-row">
-            <div class="qr v1-qr"><img src="qr.png" alt="QR"></div>
-            <div class="v1-cta">
-              <span class="scan">scan me ❖</span>
-              <span class="url">roba364.github.io/drago-adopt</span>
-            </div>
-          </div>
-          <div class="v1-tags">
-            <span class="bubble bubble-peach">~5–6 mo</span>
-            <span class="bubble bubble-white">mini size</span>
-            <span class="bubble bubble-coral">Belgrade</span>
-          </div>
-        </div>
+  <div class="sticker">
+    <div class="head">
+      <span class="kicker">Adopt&nbsp;·&nbsp;Belgrade</span>
+      <span class="badge">♥ rescue</span>
+    </div>
+    <img class="photo" src="photos/hero.jpg" alt="Drago portrait">
+    <h2 class="title">meet <em>Drago.</em></h2>
+    <p class="sub">Rescued in Belgrade. Quiet, gentle, looking for a home — and your couch.</p>
+    <div class="row">
+      <div class="qr"><img src="qr.png" alt="QR"></div>
+      <div class="copy">
+        <small>scan me</small>
+        <strong>take me home</strong>
       </div>
     </div>
-
-    <!-- ─────────────── VARIANT 2 — Boarding Pass ─────────────── -->
-    <div class="stage">
-      <span class="stage-label"><span class="num">02</span> &nbsp;Boarding Pass</span>
-      <div class="v2">
-        <div class="v2-top">
-          <div class="v2-kicker">
-            <span>♥ Adoption Pass</span>
-            <span class="num">№ 001</span>
-          </div>
-          <img class="v2-photo" src="photos/hero.jpg" alt="Drago portrait">
-          <h2 class="v2-name">Drago<em>.</em></h2>
-          <p class="v2-tagline">rescued · mini · 5–6 months</p>
-          <div class="v2-grid">
-            <div class="cell">
-              <small>From</small>
-              <strong>Belgrade,<br>the street</strong>
-            </div>
-            <div class="cell">
-              <small>To</small>
-              <strong>your home,<br>your couch</strong>
-            </div>
-          </div>
-        </div>
-        <div class="v2-perf"><span class="dashes"></span></div>
-        <div class="v2-stub">
-          <div class="qr"><img src="qr.png" alt="QR"></div>
-          <div class="copy">
-            <span class="board">board <em>now.</em></span>
-            <small>scan to meet me</small>
-            <div class="v2-tags">
-              <span class="bubble bubble-peach">vaccinated</span>
-              <span class="bubble bubble-coral">gentle</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="tags">
+      <span class="bubble">5–6 mo</span>
+      <span class="bubble">mini</span>
+      <span class="bubble">vaccinated</span>
     </div>
+  </div>
 
-    <!-- ─────────────── VARIANT 3 — Coral hero ─────────────── -->
-    <div class="stage">
-      <span class="stage-label"><span class="num">03</span> &nbsp;Coral Hero</span>
-      <div class="v3">
-        <div class="v3-head">
-          <span class="v3-kicker">Adopt&nbsp;·&nbsp;Belgrade</span>
-          <span class="v3-badge">♥ rescue</span>
-        </div>
-        <img class="v3-photo" src="photos/hero.jpg" alt="Drago portrait">
-        <h2 class="v3-title">meet <em>Drago.</em></h2>
-        <p class="v3-sub">Rescued in Belgrade. Quiet, gentle, looking for a home — and your couch.</p>
-        <div class="v3-row">
-          <div class="qr"><img src="qr.png" alt="QR"></div>
-          <div class="copy">
-            <small>scan me</small>
-            <strong>take me home</strong>
-          </div>
-        </div>
-        <div class="v3-tags">
-          <span class="bubble">5–6 mo</span>
-          <span class="bubble">mini</span>
-          <span class="bubble">vaccinated</span>
-        </div>
-      </div>
-    </div>
+  <div class="actions">
+    <button id="downloadBtn" class="btn btn-coral" type="button">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/>
+      </svg>
+      <span>Download PNG</span>
+    </button>
+    <button class="btn btn-ghost" type="button" onclick="window.print()">Print</button>
+  </div>
+  <p class="actions-hint">PNG renders at 3× resolution — ready for print or social.</p>
 
-  </main>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+    const btn = document.getElementById('downloadBtn');
+    const sticker = document.querySelector('.sticker');
+    const label = btn.querySelector('span');
+    const originalLabel = label.textContent;
+
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      label.textContent = 'Rendering…';
+      try {
+        await document.fonts.ready;
+        const canvas = await html2canvas(sticker, {
+          scale: 3,
+          backgroundColor: null,
+          useCORS: true,
+        });
+        const link = document.createElement('a');
+        link.download = 'drago-sticker.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } catch (err) {
+        console.error(err);
+        alert('Could not render the sticker. Try the Print option as a fallback.');
+      } finally {
+        btn.disabled = false;
+        label.textContent = originalLabel;
+      }
+    });
+  </script>
 
 </body>
 </html>
