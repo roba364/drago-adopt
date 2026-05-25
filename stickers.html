@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drago — QR sticker variants</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-base: #FFF5EC;
+      --bg-soft: #FFE6D6;
+      --bg-card: #FFFFFF;
+      --ink: #2A1810;
+      --ink-soft: #7A5A48;
+      --coral: #FF5A36;
+      --coral-hot: #E84320;
+      --warm: #FFB347;
+      --divider: #F0DCC8;
+      --shadow-md: 0 4px 14px rgba(42, 24, 16, 0.08), 0 1px 3px rgba(42, 24, 16, 0.05);
+      --shadow-lg: 0 14px 40px rgba(42, 24, 16, 0.12), 0 4px 10px rgba(42, 24, 16, 0.06);
+      --shadow-coral: 0 12px 28px rgba(255, 90, 54, 0.32);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 3rem 1.5rem 4rem;
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      background: var(--bg-base);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-head {
+      max-width: 60rem;
+      margin: 0 auto 2.5rem;
+      text-align: center;
+    }
+    .page-head h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .page-head h1 em {
+      color: var(--coral);
+      font-style: italic;
+    }
+    .page-head p {
+      color: var(--ink-soft);
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      max-width: 90rem;
+      margin: 0 auto;
+      align-items: start;
+      justify-items: center;
+    }
+
+    .stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .stage-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      font-weight: 800;
+    }
+    .stage-label .num {
+      color: var(--coral);
+    }
+
+    /* ───────────── Common bubble & QR primitives ───────────── */
+    .bubble {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.78rem;
+      line-height: 1;
+      box-shadow: var(--shadow-md);
+      white-space: nowrap;
+    }
+    .bubble-white { background: var(--bg-card); color: var(--ink); border: 1px solid var(--divider); }
+    .bubble-coral { background: var(--coral); color: #fff; }
+    .bubble-ink   { background: var(--ink);   color: var(--bg-base); }
+    .bubble-peach { background: var(--bg-soft); color: var(--ink); }
+    .bubble .dot {
+      width: 0.5rem; height: 0.5rem; border-radius: 50%;
+      background: var(--coral);
+      box-shadow: 0 0 0 3px rgba(255, 90, 54, 0.2);
+    }
+
+    .qr {
+      background: #fff;
+      border-radius: 14px;
+      padding: 0.55rem;
+      box-shadow: var(--shadow-md);
+      display: block;
+    }
+    .qr img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      image-rendering: pixelated;
+    }
+
+    /* ─────────────────────────────────────────────
+       VARIANT 1 — Pinterest Pin (vertical card)
+       ───────────────────────────────────────────── */
+    .v1 {
+      width: 320px;
+      background: var(--bg-card);
+      border-radius: 28px;
+      padding: 14px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+    .v1-photo {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+      background: var(--bg-soft);
+    }
+    .v1-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .v1-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      padding: 0.4rem 0.85rem 0.4rem 0.55rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .v1-heart {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--coral);
+      display: grid; place-items: center;
+      box-shadow: var(--shadow-coral);
+    }
+    .v1-heart svg { width: 18px; height: 18px; fill: #fff; }
+
+    .v1-body {
+      padding: 16px 8px 4px;
+    }
+    .v1-title {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-size: 2rem;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin: 0 0 0.5rem;
+    }
+    .v1-title em { color: var(--coral); font-style: italic; }
+    .v1-sub {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      margin: 0 0 12px;
+      line-height: 1.4;
+    }
+    .v1-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .v1-qr {
+      flex: 0 0 auto;
+      width: 84px; height: 84px;
+    }
+    .v1-cta {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .v1-cta .scan {
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .v1-cta .url {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--coral);
+      letter-spacing: 0.02em;
+      word-break: break-all;
+    }
+    .v1-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .v1-tags .bubble { font-size: 0.7rem; padding: 0.35rem 0.7rem; }
+
+    /* ─────────────────────────────────────────────
+       VARIANT 2 — Polaroid + Floating Bubbles
+       ───────────────────────────────────────────── */
+    .v2 {
+      width: 340px;
+      height: 460px;
+      position: relative;
+      background: var(--bg-soft);
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      padding: 22px;
+    }
+    .v2::before {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 60%; aspect-ratio: 1; border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(255, 179, 71, 0.55), transparent 70%);
+      pointer-events: none;
+    }
+    .v2-polaroid {
+      position: absolute;
+      top: 38px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-4deg);
+      width: 210px;
+      background: #fff;
+      padding: 10px 10px 36px;
+      border-radius: 6px;
+      box-shadow: var(--shadow-lg);
+    }
+    .v2-polaroid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+      border-radius: 2px;
+    }
+    .v2-polaroid .cap {
+      position: absolute;
+      bottom: 8px; left: 0; right: 0;
+      text-align: center;
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+    .v2-polaroid .cap em { color: var(--coral); }
+
+    .v2-bubble-a {
+      position: absolute;
+      top: 24px; left: 14px;
+      transform: rotate(-8deg);
+    }
+    .v2-bubble-b {
+      position: absolute;
+      top: 76px; right: 8px;
+      transform: rotate(6deg);
+    }
+    .v2-bubble-c {
+      position: absolute;
+      top: 250px; left: 8px;
+      transform: rotate(-5deg);
+    }
+
+    .v2-qr-card {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 10px;
+      box-shadow: var(--shadow-md);
+      transform: rotate(3deg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .v2-qr-card .qr { width: 64px; height: 64px; padding: 4px; box-shadow: none; }
+    .v2-qr-card .label {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 0.95rem;
+      line-height: 1;
+      color: var(--ink);
+      max-width: 70px;
+    }
+    .v2-qr-card .label small {
+      display: block;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 0.6rem;
+      color: var(--coral);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .v2-foot {
+      position: absolute;
+      left: 22px;
+      bottom: 24px;
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+      line-height: 0.95;
+      color: var(--ink);
+    }
+    .v2-foot em { color: var(--coral); font-style: italic; }
+    .v2-foot small {
+      display: block;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 700;
+      font-size: 0.68rem;
+      color: var(--ink-soft);
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ─────────────────────────────────────────────
+       VARIANT 3 — Coral Hero (bold street poster)
+       ───────────────────────────────────────────── */
+    .v3 {
+      width: 320px;
+      background: var(--coral);
+      border-radius: 28px;
+      padding: 22px;
+      box-shadow: var(--shadow-lg), var(--shadow-coral);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .v3::before {
+      content: "";
+      position: absolute;
+      inset: auto -20% -30% auto;
+      width: 70%; aspect-ratio: 1; border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(255, 246, 234, 0.25), transparent 70%);
+      pointer-events: none;
+    }
+    .v3-head {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .v3-kicker {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+    .v3-badge {
+      background: rgba(255, 255, 255, 0.18);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 800;
+    }
+    .v3-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 22px;
+      object-fit: cover;
+      display: block;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .v3-title {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-size: 3rem;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      margin: 18px 0 4px;
+    }
+    .v3-title em {
+      font-style: italic;
+      color: var(--bg-base);
+    }
+    .v3-sub {
+      font-size: 0.82rem;
+      opacity: 0.92;
+      margin: 0 0 16px;
+      line-height: 1.45;
+    }
+    .v3-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 18px;
+      padding: 10px;
+    }
+    .v3-row .qr { width: 72px; height: 72px; padding: 0; box-shadow: none; }
+    .v3-row .copy {
+      flex: 1;
+      display: flex; flex-direction: column;
+      gap: 2px;
+    }
+    .v3-row .copy strong {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    .v3-row .copy small {
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--coral);
+    }
+    .v3-tags {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .v3-tags .bubble {
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      box-shadow: none;
+      font-size: 0.7rem;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* ───────── print helpers ───────── */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page-head, .stage-label { display: none; }
+      .grid { gap: 1rem; }
+      .v1, .v2, .v3 {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px dashed #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-head">
+    <h1>Drago — QR <em>sticker</em> variants</h1>
+    <p>Three takes on the same idea. Open this page, pick a favourite, print or screenshot.</p>
+  </header>
+
+  <main class="grid">
+
+    <!-- ─────────────── VARIANT 1 — Pinterest Pin ─────────────── -->
+    <div class="stage">
+      <span class="stage-label"><span class="num">01</span> &nbsp;Pinterest Pin</span>
+      <div class="v1">
+        <div class="v1-photo">
+          <img src="photos/hero.jpg" alt="Drago portrait">
+          <div class="v1-badge"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--coral);"></span>ещё ищу свой дом</div>
+          <div class="v1-heart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg>
+          </div>
+        </div>
+        <div class="v1-body">
+          <h2 class="v1-title">meet <em>drago.</em></h2>
+          <p class="v1-sub">Тихий мини-мальчик из Белграда. Готов познакомиться со своей семьёй.</p>
+          <div class="v1-row">
+            <div class="qr v1-qr"><img src="qr.png" alt="QR"></div>
+            <div class="v1-cta">
+              <span class="scan">scan me ❖</span>
+              <span class="url">roba364.github.io/drago-adopt</span>
+            </div>
+          </div>
+          <div class="v1-tags">
+            <span class="bubble bubble-peach">~5–6 мес</span>
+            <span class="bubble bubble-white">мини</span>
+            <span class="bubble bubble-coral">Белград</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─────────────── VARIANT 2 — Polaroid + bubbles ─────────────── -->
+    <div class="stage">
+      <span class="stage-label"><span class="num">02</span> &nbsp;Polaroid Stack</span>
+      <div class="v2">
+        <div class="bubble bubble-coral v2-bubble-a"><span class="dot" style="background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,0.25);"></span>ищу дом</div>
+        <div class="bubble bubble-white v2-bubble-b">мини · 5–6 мес</div>
+
+        <div class="v2-polaroid">
+          <img src="photos/hero.jpg" alt="Drago">
+          <span class="cap">drago <em>·</em></span>
+        </div>
+
+        <div class="bubble bubble-ink v2-bubble-c">Белград 🇷🇸</div>
+
+        <div class="v2-foot">
+          забери&nbsp;<em>меня.</em>
+          <small>scan → roba364.github.io/drago-adopt</small>
+        </div>
+
+        <div class="v2-qr-card">
+          <div class="qr"><img src="qr.png" alt="QR"></div>
+          <span class="label"><small>scan</small>познакомиться</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─────────────── VARIANT 3 — Coral hero ─────────────── -->
+    <div class="stage">
+      <span class="stage-label"><span class="num">03</span> &nbsp;Coral Hero</span>
+      <div class="v3">
+        <div class="v3-head">
+          <span class="v3-kicker">Adopt&nbsp;·&nbsp;Belgrade</span>
+          <span class="v3-badge">♥ rescue</span>
+        </div>
+        <img class="v3-photo" src="photos/hero.jpg" alt="Drago portrait">
+        <h2 class="v3-title">meet <em>drago.</em></h2>
+        <p class="v3-sub">Spasen u Beogradu. Tihi, nežan, traži dom — i tvoj kauč.</p>
+        <div class="v3-row">
+          <div class="qr"><img src="qr.png" alt="QR"></div>
+          <div class="copy">
+            <small>scan me</small>
+            <strong>забери меня домой</strong>
+          </div>
+        </div>
+        <div class="v3-tags">
+          <span class="bubble">5–6 мес</span>
+          <span class="bubble">мини</span>
+          <span class="bubble">вакцинирован</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
