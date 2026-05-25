@@ -383,7 +383,7 @@ body {
 .hero-collage .pin-quote {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -14%;
   z-index: 2;
   width: 65%;
   padding: 1.4rem 1.4rem 1.2rem;
@@ -1074,6 +1074,7 @@ body {
   .hero-collage .pin-quote {
     width: 72%;
     padding: 1rem;
+    bottom: -8%;
   }
 
   .quote-text {
