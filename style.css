@@ -315,10 +315,6 @@ body {
   padding: 8.5rem 0 4rem;
 }
 
-.hero-copy {
-  transform: translateY(-2rem);
-}
-
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -369,38 +365,6 @@ body {
   font-size: 1.12rem;
   line-height: 1.55;
   color: var(--ink-soft);
-}
-
-.hero-tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  max-width: 34rem;
-  margin-top: 1.35rem;
-}
-
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.25rem;
-  border-radius: 999px;
-  padding: 0.48rem 0.9rem;
-  font-size: 0.82rem;
-  font-weight: 800;
-  line-height: 1;
-  box-shadow: var(--shadow-sm);
-}
-
-.hero-tag-white {
-  background: var(--bg-card);
-  border: 1px solid var(--divider);
-  color: var(--ink);
-}
-
-.hero-tag-coral {
-  background: var(--coral);
-  border: 1px solid var(--coral);
-  color: #fff;
 }
 
 .hero-collage {
@@ -1039,20 +1003,6 @@ body {
   .hero {
     padding-top: 7.5rem;
     padding-bottom: 2rem;
-  }
-
-  .hero-copy {
-    transform: none;
-  }
-
-  .hero-tag-cloud {
-    margin-top: 1.15rem;
-  }
-
-  .hero-tag {
-    min-height: 2rem;
-    padding: 0.42rem 0.78rem;
-    font-size: 0.78rem;
   }
 
   .hero-collage .pin-quote {

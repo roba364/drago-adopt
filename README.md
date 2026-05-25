@@ -4,7 +4,7 @@ Static one-page website for Drago's adoption campaign.
 
 Design: Pinterest-style masonry with a Sunset Coral palette (cream, coral, peach). Display type — Fraunces; body — Plus Jakarta Sans.
 
-Sections: hero with a tag cloud of Drago's traits, story, masonry gallery, adoption checklist, and contact card.
+Sections: hero, story, masonry gallery, adoption checklist, and contact card.
 
 ## Local preview
 
