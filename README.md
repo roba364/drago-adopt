@@ -58,7 +58,7 @@ Three printable sticker designs that combine Drago's hero photo, the QR, and Pin
 Variants:
 
 1. **Pinterest Pin** — vertical card with the photo on top, badge overlay, name in Fraunces italic, QR + tag bubbles below. Closest to the site's hero block.
-2. **Polaroid Stack** — a tilted polaroid in a peach frame with floating coral/white/ink bubbles around it, plus a small tilted QR card in the corner. Playful, sticker-y feel.
+2. **Boarding Pass** — adoption ticket with photo, name, FROM/TO grid, dashed perforation, and a QR stub captioned "board now". Plays on the QR-as-boarding-pass metaphor.
 3. **Coral Hero** — bold coral background, photo in a white frame, big "meet drago." headline, white QR row with CTA. Made for street poles and posters.
 
 The page is print-friendly — `Cmd+P` keeps each sticker on its own cut line.
