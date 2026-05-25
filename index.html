@@ -7,7 +7,7 @@
   <meta name="description" content="Drago is looking for a forever home in Belgrade.">
   <meta property="og:title" content="Drago — looking for a forever home">
   <meta property="og:description" content="A gentle puppy in Belgrade, rescued and ready for adoption.">
-  <meta property="og:image" content="photos/hero.svg">
+  <meta property="og:image" content="photos/hero.jpg?v=20260525-1035">
   <title>Drago — Adoption</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
       },
     };
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260525-2100">
 </head>
 <body class="bg-base text-ink">
 
@@ -71,7 +71,7 @@
     <!-- ────────── HERO ────────── -->
     <section class="hero">
       <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-[1.05fr_0.95fr]">
-        <div class="reveal">
+        <div class="reveal hero-copy">
           <span class="hero-badge">
             <span class="pulse" aria-hidden="true"></span>
             <span data-i18n="hero.badge">still waiting for a home</span>
@@ -96,12 +96,21 @@
             </a>
             <a class="btn btn-ghost" href="#story" data-i18n="cta.readStory">Read my story</a>
           </div>
+
+          <div class="hero-tag-cloud" aria-label="Drago highlights">
+            <span class="hero-tag hero-tag-coral" data-i18n="hero.tag.calm">calm at home</span>
+            <span class="hero-tag hero-tag-white" data-i18n="hero.tag.noChew">doesn't chew things</span>
+            <span class="hero-tag hero-tag-white" data-i18n="hero.tag.dogs">dog-friendly</span>
+            <span class="hero-tag hero-tag-coral" data-i18n="hero.tag.gentle">gentle play</span>
+            <span class="hero-tag hero-tag-white" data-i18n="hero.tag.eats">eats well</span>
+            <span class="hero-tag hero-tag-coral" data-i18n="hero.tag.toilet">learning walks</span>
+          </div>
         </div>
 
         <div class="reveal" data-delay="1">
           <div class="hero-collage">
             <div class="pin pin-photo pin-main">
-              <img src="photos/hero.svg" alt="Drago portrait" loading="eager">
+              <img src="photos/hero.jpg?v=20260525-1035" alt="Drago portrait" loading="eager">
               <button class="heart-btn" aria-label="Save Drago" data-heart>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg>
               </button>
@@ -135,49 +144,49 @@
           <p class="eyebrow" data-i18n="gallery.kicker">Gallery</p>
           <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <h2 class="section-title font-display" data-i18n="gallery.title">Pin Drago's days.</h2>
-            <p class="max-w-sm text-ink-soft" data-i18n="gallery.note">Real photos coming soon — these warm placeholders hold the spot for now.</p>
+            <p class="max-w-sm text-ink-soft" data-i18n="gallery.note">Fresh photos from Drago's walks, naps, and small brave steps toward home.</p>
           </div>
         </div>
 
         <div class="masonry reveal" data-delay="1">
-          <button class="pin pin-photo" data-full="photos/gallery-01.svg" data-caption="gallery.cap.playing">
-            <img src="photos/gallery-01.svg" alt="Drago playing">
+          <button class="pin pin-photo" data-full="photos/gallery-01.jpg?v=20260525-1035" data-caption="gallery.cap.playing">
+            <img src="photos/gallery-01.jpg?v=20260525-1035" alt="Drago playing">
             <span class="pin-caption" data-i18n="gallery.cap.playing">playing</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-02.svg" data-caption="gallery.cap.resting">
-            <img src="photos/gallery-02.svg" alt="Drago resting">
+          <button class="pin pin-photo" data-full="photos/gallery-02.jpg?v=20260525-1035" data-caption="gallery.cap.resting">
+            <img src="photos/gallery-02.jpg?v=20260525-1035" alt="Drago resting">
             <span class="pin-caption" data-i18n="gallery.cap.resting">resting</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-03.svg" data-caption="gallery.cap.portrait">
-            <img src="photos/gallery-03.svg" alt="Drago portrait">
+          <button class="pin pin-photo" data-full="photos/gallery-03.jpg?v=20260525-1035" data-caption="gallery.cap.portrait">
+            <img src="photos/gallery-03.jpg?v=20260525-1035" alt="Drago portrait">
             <span class="pin-caption" data-i18n="gallery.cap.portrait">portrait</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-04.svg" data-caption="gallery.cap.outside">
-            <img src="photos/gallery-04.svg" alt="Drago outside">
+          <button class="pin pin-photo" data-full="photos/gallery-04.jpg?v=20260525-1035" data-caption="gallery.cap.outside">
+            <img src="photos/gallery-04.jpg?v=20260525-1035" alt="Drago outside">
             <span class="pin-caption" data-i18n="gallery.cap.outside">outside</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-05.svg" data-caption="gallery.cap.running">
-            <img src="photos/gallery-05.svg" alt="Drago running">
+          <button class="pin pin-photo" data-full="photos/gallery-05.jpg?v=20260525-1035" data-caption="gallery.cap.running">
+            <img src="photos/gallery-05.jpg?v=20260525-1035" alt="Drago running">
             <span class="pin-caption" data-i18n="gallery.cap.running">running</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-06.svg" data-caption="gallery.cap.paws">
-            <img src="photos/gallery-06.svg" alt="Drago paws">
+          <button class="pin pin-photo" data-full="photos/gallery-06.jpg?v=20260525-1035" data-caption="gallery.cap.paws">
+            <img src="photos/gallery-06.jpg?v=20260525-1035" alt="Drago paws">
             <span class="pin-caption" data-i18n="gallery.cap.paws">tiny paws</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-07.svg" data-caption="gallery.cap.friend">
-            <img src="photos/gallery-07.svg" alt="Drago with a friend">
+          <button class="pin pin-photo" data-full="photos/gallery-07.jpg?v=20260525-1035" data-caption="gallery.cap.friend">
+            <img src="photos/gallery-07.jpg?v=20260525-1035" alt="Drago with a friend">
             <span class="pin-caption" data-i18n="gallery.cap.friend">with a friend</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
-          <button class="pin pin-photo" data-full="photos/gallery-08.svg" data-caption="gallery.cap.window">
-            <img src="photos/gallery-08.svg" alt="Drago by the window">
-            <span class="pin-caption" data-i18n="gallery.cap.window">by the window</span>
+          <button class="pin pin-photo" data-full="photos/gallery-08.jpg?v=20260525-1035" data-caption="gallery.cap.window">
+            <img src="photos/gallery-08.jpg?v=20260525-1035" alt="Drago on a cozy windowsill">
+            <span class="pin-caption" data-i18n="gallery.cap.window">cozy windowsill</span>
             <span class="heart-btn" data-heart aria-label="Save"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.5-9.5-9.2C1.2 8 3.4 4 7.3 4c2 0 3.5 1 4.7 2.6C13.2 5 14.7 4 16.7 4c3.9 0 6.1 4 4.8 7.8C19.5 16.5 12 21 12 21z"/></svg></span>
           </button>
         </div>
@@ -356,7 +365,7 @@
 
         <div class="reveal" data-delay="1">
           <div class="pin pin-photo">
-            <img src="photos/gallery-03.svg" alt="Drago looking forward">
+            <img src="photos/contact.jpg?v=20260525-1035" alt="Drago looking forward">
           </div>
           <p class="mt-6 text-center text-ink-soft" data-i18n="contact.repost">Reposts mean the world. Thank you 🧡</p>
         </div>
@@ -378,6 +387,6 @@
     <img id="lightboxImg" alt="">
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260525-2100"></script>
 </body>
 </html>

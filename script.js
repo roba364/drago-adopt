@@ -3,6 +3,8 @@ const state = {
   lang: localStorage.getItem("drago-lang") || pickLanguage(),
 };
 
+const ASSET_VERSION = "20260525-2100";
+
 function pickLanguage() {
   const code = (navigator.language || "en").slice(0, 2).toLowerCase();
   return ["ru", "sr"].includes(code) ? code : "en";
@@ -10,7 +12,7 @@ function pickLanguage() {
 
 async function loadTranslations() {
   try {
-    const response = await fetch("i18n.json");
+    const response = await fetch(`i18n.json?v=${ASSET_VERSION}`);
     state.translations = await response.json();
     applyLanguage(state.lang);
   } catch (error) {

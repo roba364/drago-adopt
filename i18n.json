@@ -14,6 +14,12 @@
     "hero.lead": "Тихий мини-мальчик, спасённый в Белграде. Готов познакомиться со своей семьёй.",
     "hero.quote": "«Он поднял голову и улыбнулся — будто понял, что это его шанс.»",
     "hero.quoteMeta": "— заметка спасителя",
+    "hero.tag.calm": "тихий дома",
+    "hero.tag.noChew": "не грызёт вещи",
+    "hero.tag.dogs": "ладит с собаками",
+    "hero.tag.gentle": "мягко играет",
+    "hero.tag.eats": "хорошо ест",
+    "hero.tag.toilet": "учится прогулкам",
 
     "chip.boy": "мальчик",
     "chip.age": "~5–6 месяцев",
@@ -28,7 +34,7 @@
 
     "gallery.kicker": "Галерея",
     "gallery.title": "Дни Drago — на доску.",
-    "gallery.note": "Скоро будут реальные фото — пока тёплые заглушки держат место.",
+    "gallery.note": "Свежие фото с прогулок, отдыха и маленьких смелых шагов Драго к дому.",
     "gallery.cap.playing": "играет",
     "gallery.cap.resting": "отдыхает",
     "gallery.cap.portrait": "портрет",
@@ -36,7 +42,7 @@
     "gallery.cap.running": "бежит",
     "gallery.cap.paws": "лапки",
     "gallery.cap.friend": "с другом",
-    "gallery.cap.window": "у окна",
+    "gallery.cap.window": "уют на подоконнике",
 
     "character.kicker": "Характер",
     "character.title": "Мягкий, аккуратный, быстро учится.",
@@ -107,6 +113,12 @@
     "hero.lead": "A gentle 5–6 month old boy rescued in Belgrade is ready to meet his people.",
     "hero.quote": "“He held his head up and started smiling — like he understood this was his chance.”",
     "hero.quoteMeta": "— rescuer's note",
+    "hero.tag.calm": "calm at home",
+    "hero.tag.noChew": "doesn't chew things",
+    "hero.tag.dogs": "dog-friendly",
+    "hero.tag.gentle": "gentle play",
+    "hero.tag.eats": "eats well",
+    "hero.tag.toilet": "learning walks",
 
     "chip.boy": "male",
     "chip.age": "~5–6 months",
@@ -121,7 +133,7 @@
 
     "gallery.kicker": "Gallery",
     "gallery.title": "Pin Drago's days.",
-    "gallery.note": "Real photos coming soon — these warm placeholders hold the spot for now.",
+    "gallery.note": "Fresh photos from Drago's walks, naps, and small brave steps toward home.",
     "gallery.cap.playing": "playing",
     "gallery.cap.resting": "resting",
     "gallery.cap.portrait": "portrait",
@@ -129,7 +141,7 @@
     "gallery.cap.running": "running",
     "gallery.cap.paws": "tiny paws",
     "gallery.cap.friend": "with a friend",
-    "gallery.cap.window": "by the window",
+    "gallery.cap.window": "cozy windowsill",
 
     "character.kicker": "Character",
     "character.title": "Soft, careful, learning fast.",
@@ -200,6 +212,12 @@
     "hero.lead": "Miran mali dečak od 5–6 meseci, spasen u Beogradu, spreman je da upozna svoju porodicu.",
     "hero.quote": "„Podigao je glavu i počeo da se smeši — kao da je razumeo da je ovo njegova šansa.“",
     "hero.quoteMeta": "— beleška spasiteljke",
+    "hero.tag.calm": "miran kod kuće",
+    "hero.tag.noChew": "ne grize stvari",
+    "hero.tag.dogs": "voli pse",
+    "hero.tag.gentle": "nežno se igra",
+    "hero.tag.eats": "dobro jede",
+    "hero.tag.toilet": "uči šetnje",
 
     "chip.boy": "mužjak",
     "chip.age": "~5–6 meseci",
@@ -214,7 +232,7 @@
 
     "gallery.kicker": "Galerija",
     "gallery.title": "Dragovi dani — na tabli.",
-    "gallery.note": "Prave fotografije stižu uskoro — tople ilustracije čuvaju mesto.",
+    "gallery.note": "Sveže fotografije iz Dragoovih šetnji, odmora i malih hrabrih koraka ka domu.",
     "gallery.cap.playing": "igra se",
     "gallery.cap.resting": "odmara",
     "gallery.cap.portrait": "portret",
@@ -222,7 +240,7 @@
     "gallery.cap.running": "trči",
     "gallery.cap.paws": "šape",
     "gallery.cap.friend": "sa drugarom",
-    "gallery.cap.window": "kraj prozora",
+    "gallery.cap.window": "udobno na prozoru",
 
     "character.kicker": "Karakter",
     "character.title": "Nežan, pažljiv, brzo uči.",
